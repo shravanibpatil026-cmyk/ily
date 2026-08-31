@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For You, With All My Love ❤️</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- FLOATING HEARTS -->
+
+    <div class="hearts"></div>
+
+
+    <!-- ================= OPENING PAGE ================= -->
+
+    <section class="hero" id="hero">
+
+        <div class="glow glow-one"></div>
+        <div class="glow glow-two"></div>
+
+        <div class="hero-content">
+
+            <div class="mini-heart">♡</div>
+
+            <p class="small-text">
+                Something I made just for you
+            </p>
+
+            <h1>
+                For <span>You</span>, Prithvi
+            </h1>
+
+            <p class="subtitle">
+                Some things are too difficult to say out loud...
+                so I decided to put them into a little corner of the internet.
+            </p>
+
+            <button class="open-button" onclick="startJourney()">
+                Open My Heart 💌
+            </button>
+
+            <p class="click-text">
+                Please don't rush... read everything. 🤍
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= OUR STORY ================= -->
+
+    <section class="section story" id="story">
+
+        <p class="section-label">
+            OUR STORY
+        </p>
+
+        <h2>
+            Maybe our story isn't over yet...
+        </h2>
+
+        <p class="story-text">
+            Three years is a really long time to share with someone.
+            We have laughed together, fought together, grown together
+            and created so many memories that I could never simply forget.
+        </p>
+
+        <p class="story-text">
+            Things changed between us, and we ended up becoming best
+            friends after everything we had been through.
+        </p>
+
+        <div class="heart-divider">
+            ♡
+        </div>
+
+        <p class="story-text">
+            But somewhere inside me, I still have this little hope...
+            that maybe there is still something between us that deserves
+            another chance.
+        </p>
+
+        <button class="next-button" onclick="goToSection('memories')">
+            Our memories →
+        </button>
+
+    </section>
+
+
+    <!-- ================= MEMORIES ================= -->
+
+    <section class="section memories" id="memories">
+
+        <p class="section-label">
+            OUR MEMORIES
+        </p>
+
+        <h2>
+            Little moments I'll always keep
+        </h2>
+
+        <p class="section-intro">
+            Replace these pictures with our favourite photos. 🥹❤️
+        </p>
+
+
+        <div class="memory-grid">
+
+            <!-- PHOTO 1 -->
+
+            <div class="memory-card">
+
+                <img
+                    src="images/photo1.jpeg"
+                    alt="Our memory"
+                >
+
+                <p>
+                    One of my favourite memories with you. ❤️
+                </p>
+
+            </div>
+
+
+            <!-- PHOTO 2 -->
+
+            <div class="memory-card">
+
+                <img
+                    src="images/photo2.jpeg"
+                    alt="Our memory"
+                >
+
+                <p>
+                    A moment I wish I could relive again. 🥹
+                </p>
+
+            </div>
+
+
+            <!-- PHOTO 3 -->
+
+            <div class="memory-card">
+
+                <img
+                    src="images/photo3.jpeg"
+                    alt="Our memory"
+                >
+
+                <p>
+                    Because somehow, every memory with you feels special. 🤍
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <button class="next-button" onclick="goToSection('reasons')">
+            There's more... →
+        </button>
+
+    </section>
+
+
+    <!-- ================= REASONS ================= -->
+
+    <section class="section reasons" id="reasons">
+
+        <p class="section-label">
+            WHY YOU
+        </p>
+
+        <h2>
+            Things I still love about you
+        </h2>
+
+
+        <div class="reasons-list">
+
+            <div>
+                <span>01</span>
+                The way you can make me smile without even trying.
+            </div>
+
+            <div>
+                <span>02</span>
+                The comfort I feel when I'm talking to you.
+            </div>
+
+            <div>
+                <span>03</span>
+                All the little things about you that I notice even when
+                I don't tell you.
+            </div>
+
+            <div>
+                <span>04</span>
+                The memories we created that nobody can ever take away.
+            </div>
+
+            <div>
+                <span>05</span>
+                And honestly... because a part of my heart still chooses you.
+            </div>
+
+        </div>
+
+
+        <button class="next-button" onclick="goToSection('letters')">
+            Open something for you 💌
+        </button>
+
+    </section>
+
+
+    <!-- ================= MINI LETTERS ================= -->
+
+    <section class="section letters" id="letters">
+
+        <p class="section-label">
+            LITTLE LETTERS
+        </p>
+
+        <h2>
+            A few things I never say enough
+        </h2>
+
+        <p class="section-intro">
+            Click each little letter. 💕
+        </p>
+
+
+        <div class="letter-container">
+
+
+            <!-- LETTER 1 -->
+
+            <div class="letter" onclick="openLetter(this)">
+
+                <div class="letter-front">
+
+                    💌
+
+                    <span>
+                        Open me
+                    </span>
+
+                </div>
+
+                <div class="letter-back">
+
+                    <p>
+                        You still mean more to me than you probably realise. ❤️
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- LETTER 2 -->
+
+            <div class="letter" onclick="openLetter(this)">
+
+                <div class="letter-front">
+
+                    💗
+
+                    <span>
+                        Open me
+                    </span>
+
+                </div>
+
+                <div class="letter-back">
+
+                    <p>
+                        Even after everything, I still find myself hoping
+                        for an us.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- LETTER 3 -->
+
+            <div class="letter" onclick="openLetter(this)">
+
+                <div class="letter-front">
+
+                    🥹
+
+                    <span>
+                        Open me
+                    </span>
+
+                </div>
+
+                <div class="letter-back">
+
+                    <p>
+                        Maybe this month will tell us what our hearts really want.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <button class="next-button" onclick="goToSection('final')">
+            One last thing... ❤️
+        </button>
+
+    </section>
+
+
+    <!-- ================= FINAL SECTION ================= -->
+
+    <section class="final-section" id="final">
+
+        <div class="final-content">
+
+            <div class="final-heart">
+                ❤️
+            </div>
+
+            <p class="section-label">
+                JUST ONE LAST THING
+            </p>
+
+            <h2>
+                Please come back to me.
+            </h2>
+
+            <p>
+                I know we don't know what will happen after this month.
+                And maybe neither of us has all the answers right now.
+            </p>
+
+            <p>
+                But I really hope that somewhere along the way,
+                you find your way back to me.
+            </p>
+
+            <button class="final-button" onclick="showLetter()">
+                Read what my heart wants to say 💌
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FINAL LOVE LETTER POPUP ================= -->
+
+    <div class="popup" id="finalLetter">
+
+        <div class="popup-content">
+
+            <button class="close" onclick="closeLetter()">
+                ×
+            </button>
+
+            <div class="big-heart">
+                ❤️
+            </div>
+
+            <h2>
+                For you, always.
+            </h2>
+
+            <div id="typingText"></div>
+
+            <p class="signature">
+                — From the girl who still chooses you. ❤️
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
